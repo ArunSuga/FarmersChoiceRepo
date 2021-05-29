@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Vegetable List</title>
+</head>
+<body>
+<h1>Vegetable List</h1>
+
+<table>
+     <tr>
+     	<th>Id</th>
+     	<th>Name</th>
+     </tr>
+      <tr th:each="vegetable : ${vegetables}">
+     	<th th:text="${vegetable.id}">ID</th>
+     	<th th:text="${vegetable.name}">Name</th>
+     </tr>
+</table>
+</body>
+</html>
